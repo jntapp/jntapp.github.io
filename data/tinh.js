@@ -1,39 +1,53 @@
 class Tinh
 {
-    constructor(name, danhSachTrungTamTrungChuyen, danhSachBuuCuc = [])
+    constructor(id, name)
     {
+        this.id = id;
         this.name = name;
-        this.danhSachTrungTamTrungChuyen = danhSachTrungTamTrungChuyen;
-        this.danhSachBuuCuc = danhSachBuuCuc;
     }
 }
 
 class BuuCuc
 {
-    constructor(stt, ma='', ten = '')
+    constructor(tinhid, ma='', ten = '',stt = 0)
     {
         this.stt = stt;
         this.ten = ten;
         this.ma = ma;
+        this.tinhid = tinhid;
     }
 }
 
 
 class TrungTamTrungChuyen
 {
-    constructor(stt, ma='', ten='')
+    constructor(tinhid, ma='', ten='', stt=0)
     {
         this.stt = stt;
         this.ten = ten;
         this.ma = ma;
+        this.tinhid = tinhid;
     }
 }
 
 
 const danhSachTinh = [
-    new Tinh('Hà Nội', ['HN01', 'HN02', 'HN03']),
-    new Tinh('Hồ Chí Minh', ['HCM01', 'HCM02', 'HCM03']),
-    new Tinh('Đà Nẵng', ['DN01', 'DN02']),
-    new Tinh('Hải Phòng', ['HP01', 'HP02']),
-    new Tinh('Cần Thơ', ['CT01']),
+    new Tinh(24, 'Hà Nội'),
+    new Tinh(28, 'Hồ Chí Minh'),
+    new Tinh(32, 'Nam Định'),
+    new Tinh(36, 'Ninh Bình'),
+    new Tinh(40, 'Hà Nam'),
+    new Tinh(44, 'Hải Phòng'),
+    new Tinh(48, 'Quảng Ninh')
+];
+
+
+const danhSachBuuCuc = [
+    new BuuCuc(24, 'HN01', 'Bưu cục Hà Nội 1', 1),
+    new BuuCuc(28, 'HCM01', 'Bưu cục Hồ Chí Minh 1', 1)
+];
+
+const danhSachTrungTamTrungChuyen = [
+    new TrungTamTrungChuyen(24, 'TTTC01', 'Trung tâm trung chuyển Hà Nội 1', 1),
+    new TrungTamTrungChuyen(28, 'TTTC02', 'Trung tâm trung chuyển Hồ Chí Minh 1', 1)
 ];
