@@ -32,7 +32,7 @@ class MenuButton
     {
         const bt = document.createElement('div');
         bt.className = 'menu-button';
-        bt.innerHTML = `<a href="${this.url}">${this.caption}</a>`;
+        bt.innerHTML = `<a href="${this.url}"><font color="white">${this.caption}</font></a>`;
         return bt;
     }
 }

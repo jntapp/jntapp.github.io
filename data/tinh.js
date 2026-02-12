@@ -10,8 +10,9 @@ class Tinh
 
 class BuuCuc
 {
-    constructor(ten, ma)
+    constructor(stt, ma='', ten = '')
     {
+        this.stt = stt;
         this.ten = ten;
         this.ma = ma;
     }
@@ -20,8 +21,9 @@ class BuuCuc
 
 class TrungTamTrungChuyen
 {
-    constructor(ten, ma)
+    constructor(stt, ma='', ten='')
     {
+        this.stt = stt;
         this.ten = ten;
         this.ma = ma;
     }
