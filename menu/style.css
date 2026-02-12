@@ -1,0 +1,15 @@
+.menu
+{
+    position:fixed;
+    top:0;
+    width:100%;
+    background-color: red;
+    padding:10px;
+    color:white;
+    text-align: center;
+}
+
+.menu-button
+{
+    color:white;
+}
