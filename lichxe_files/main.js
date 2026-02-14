@@ -74,6 +74,7 @@ function loadChiTietXeDiTheoTinh(thoiGianId, tinhId)
             html += danhSachTrungTamTrungChuyen[i].stt + ' - ';
         }
     }
+    chiTietDiv.innerHTML = html;
     chiTietDiv.style.display = 'block';
 }
 
