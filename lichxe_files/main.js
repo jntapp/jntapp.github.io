@@ -68,14 +68,15 @@ function loadChiTietXeDiTheoTinh(thoiGianId, tinhId)
         }
     }
     chiTietDiv.innerHTML = tenTinh + ': ';
-
+    let danhSachMaTrungTamTrungChuyen = [];
     for (let i = 0; i < danhSachTrungTamTrungChuyen.length; i++)
     {                
         if (danhSachTrungTamTrungChuyen[i].tinhid === tinhId)
         {
-            chiTietDiv.innerHTML += danhSachTrungTamTrungChuyen[i].stt + ' - ';
+            danhSachMaTrungTamTrungChuyen.push(danhSachTrungTamTrungChuyen[i].ma);
         }
     }
+    chiTietDiv.innerHTML += danhSachMaTrungTamTrungChuyen.join(' - ');
     chiTietDiv.style.display = 'block';
 }
 
