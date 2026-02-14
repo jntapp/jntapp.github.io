@@ -18,8 +18,7 @@ class ThoiGian
                             const thoiGianDiv = document.createElement('div');
                             thoiGianDiv.className = 'thoi-gian';
                             thoiGianDiv.innerHTML = this.gioPhut;
-                        container.appendChild(thoiGianDiv);
-                    tdTime.appendChild(container);
+                    tdTime.appendChild(thoiGianDiv);
                 tr.appendChild(tdTime);
                     const tdDiemXeDen = document.createElement('td');
                         this.danhSachTinhId.forEach(tinhId => {
