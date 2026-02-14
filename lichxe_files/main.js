@@ -58,19 +58,19 @@ function loadChiTietXeDiTheoTinh(thoiGianId, tinhId)
     const chiTietDiv = document.getElementById(`chitiet-${thoiGianId}`);
     chiTietDiv.innerHTML = '';
 
-    for (let i = 0; i < danhSachTrungTamTrungChuyen.length; i++)
+    let tenTinh = '';
+    for (let j = 0; j < danhSachTinh.length; j++)
     {
-        let tenTinh = '';
-        for (let j = 0; j < danhSachTinh.length; j++)
+        if (danhSachTinh[j].id === tinhId)
         {
-            if (danhSachTinh[j].id === tinhId)
-            {
-                tenTinh = danhSachTinh[j].name;
-                break;
-            }
+            tenTinh = danhSachTinh[j].name;
+            break;
         }
+    }
+    chiTietDiv.innerHTML = tenTinh + ': ';
 
-        chiTietDiv.innerHTML = tenTinh + ': ';
+    for (let i = 0; i < danhSachTrungTamTrungChuyen.length; i++)
+    {                
         if (danhSachTrungTamTrungChuyen[i].tinhid === tinhId)
         {
             chiTietDiv.innerHTML += danhSachTrungTamTrungChuyen[i].stt + ' - ';
