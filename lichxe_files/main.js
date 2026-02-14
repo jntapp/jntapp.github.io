@@ -56,6 +56,8 @@ class ThoiGian
 function loadChiTietXeDiTheoTinh(thoiGianId, tinhId)
 {
     const chiTietDiv = document.getElementById(`chitiet-${thoiGianId}`);
+    chiTietDiv.innerHTML = '';
+
     for (let i = 0; i < danhSachTrungTamTrungChuyen.length; i++)
     {
         let tenTinh = '';
@@ -68,13 +70,12 @@ function loadChiTietXeDiTheoTinh(thoiGianId, tinhId)
             }
         }
 
-        let html = tenTinh + ': ';
+        chiTietDiv.innerHTML = tenTinh + ': ';
         if (danhSachTrungTamTrungChuyen[i].tinhid === tinhId)
         {
-            html += danhSachTrungTamTrungChuyen[i].stt + ' - ';
+            chiTietDiv.innerHTML += danhSachTrungTamTrungChuyen[i].stt + ' - ';
         }
     }
-    chiTietDiv.innerHTML = html;
     chiTietDiv.style.display = 'block';
 }
 
