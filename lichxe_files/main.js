@@ -73,7 +73,7 @@ function loadChiTietXeDiTheoTinh(thoiGianId, tinhId)
     {                
         if (danhSachTrungTamTrungChuyen[i].tinhid === tinhId)
         {
-            danhSachMaTrungTamTrungChuyen.push(danhSachTrungTamTrungChuyen[i].stt+ '(' + danhSachTrungTamTrungChuyen[i].ma + ')');
+            danhSachMaTrungTamTrungChuyen.push(danhSachTrungTamTrungChuyen[i].stt+ ' (' + danhSachTrungTamTrungChuyen[i].ma + ')');
         }
     }
     chiTietDiv.innerHTML += danhSachMaTrungTamTrungChuyen.join(' - ');
@@ -84,8 +84,8 @@ function loadChiTietXeDiTheoTinh(thoiGianId, tinhId)
 const danhSachThoiGian = [
     new ThoiGian(1, '08:00', [24, 28]),
     new ThoiGian(2, '10:00', [32, 36]),
-    new ThoiGian(1, '06:30', [36, 28, 74]),
-    new ThoiGian(3, '14:00', [40, 44, 48])
+    new ThoiGian(3, '06:30', [36, 28, 74]),
+    new ThoiGian(4, '14:00', [40, 44, 48])
 ];
 
 danhSachThoiGian.forEach(thoiGian => {
