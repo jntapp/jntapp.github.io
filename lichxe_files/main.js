@@ -88,6 +88,13 @@ function loadChiTietXeDiTheoTinh(thoiGianId, tinhId)
 
 
 const danhSachThoiGian = [
+    new ThoiGian(1, '21:40', [64,15]),
+    new ThoiGian(1, '22:40', [90]),
+    new ThoiGian(1, '00:10', [99]),
+    new ThoiGian(1, '00:40', [41]),
+    new ThoiGian(1, '01:40', [36,37]),
+    new ThoiGian(1, '02:10', [56]),
+    new ThoiGian(1, '03:40', [41,24]),
     new ThoiGian(1, '08:00', [24, 28]),
     new ThoiGian(2, '10:00', [32, 36]),
     new ThoiGian(3, '06:30', [36, 28, 74]),
