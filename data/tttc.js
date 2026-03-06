@@ -11,6 +11,14 @@ class TrungTamTrungChuyen
 
 
 const danhSachTrungTamTrungChuyen = [
+    new TrungTamTrungChuyen(15, '024GW0', 'TTKT Hải Phòng', 170),
+    new TrungTamTrungChuyen(15, '024GW1', 'Hàng phát Hải Phòng', 225),
+
+    new TrungTamTrungChuyen(24, '024GW0', 'TTKT Hà Nội 1', 150),
+    new TrungTamTrungChuyen(24, '024GW1', 'TTKT Hà Nội 2', 163),
+    new TrungTamTrungChuyen(24, '024GW2', 'TTKT Điện Biên', 350),
+    new TrungTamTrungChuyen(24, '024GW2', 'TTKT Điện Biên', 360),
+
     new TrungTamTrungChuyen(24, '024GW0', 'TTKT Hà Nội 1', 470),
     new TrungTamTrungChuyen(24, '024GW1', 'TTKT Hà Nội 2', 473),
     new TrungTamTrungChuyen(24, '024GW2', 'TTKT Hà Nội 3', 475),
@@ -24,9 +32,9 @@ const danhSachTrungTamTrungChuyen = [
 
     new TrungTamTrungChuyen(36, 'TTTC03', 'TTKT Thanh Hóa', 530),
 
-    new TrungTamTrungChuyen(37, 'TTTC03', 'TTKT Thanh Hóa', 530),
-    new TrungTamTrungChuyen(37, 'TTTC03', 'TTKT Thanh Hóa', 530),
-    new TrungTamTrungChuyen(37, 'TTTC03', 'TTKT Thanh Hóa', 530),
+    new TrungTamTrungChuyen(37, 'TTTC03', 'TTKT Nghệ An', 500),
+    new TrungTamTrungChuyen(37, 'TTTC03', 'TTKT Nghệ An', 540),
+    new TrungTamTrungChuyen(37, 'TTTC03', 'TTKT Nghệ An', 550),
 
     new TrungTamTrungChuyen(41, '221GW0', 'TTKT Hưng Yên', 410),
 
@@ -40,6 +48,9 @@ const danhSachTrungTamTrungChuyen = [
 
     new TrungTamTrungChuyen(18, 'TTTC03', 'TTKT Nam Định', 300),
     new TrungTamTrungChuyen(35, 'TTTC04', 'TTKT Ninh Bình', 200),
+
+    new TrungTamTrungChuyen(90, '222GW0', 'TTKT Long An', 870),
+    new TrungTamTrungChuyen(90, '222GW0', 'TTKT Long An', 900),
 
     new TrungTamTrungChuyen(99, '222GW0', 'TTKT Bắc Ninh', 440)
 ];
