@@ -25,6 +25,9 @@ const danhSachTrungTamTrungChuyen = [
     new TrungTamTrungChuyen(24, '024GW2', 'TTKT Hà Nội 3', 475),
     new TrungTamTrungChuyen(24, '024GW3', 'TTKT Hà Nội 4', 741),
 
+    new TrungTamTrungChuyen(241, '024GW5', 'TTKT Long Biên 1', 477),
+    new TrungTamTrungChuyen(241, '024GW6', 'TTKT Long Biên 2', 478),
+
     new TrungTamTrungChuyen(28, 'TTTC02', 'TTKT Hồ Chí Minh 1', 800),
     new TrungTamTrungChuyen(28, 'TTTC02', 'TTKT Hồ Chí Minh 2', 803),
     new TrungTamTrungChuyen(28, 'TTTC02', 'TTKT Hồ Chí Minh 3', 804),
