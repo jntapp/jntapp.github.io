@@ -95,19 +95,19 @@ function loadChiTietXeDiTheoTinh(thoiGianId, tinhId)
 
 
 const danhSachThoiGian = [
-    new ThoiGian(10, '21:40', [64,15]),
-    new ThoiGian(11, '22:40', [90]),
-    new ThoiGian(1, '00:00', [24,241]),
+    new ThoiGian(11, '21:40', [64,15]),
+    new ThoiGian(12, '22:40', [90]),
+    new ThoiGian(0, '00:00', [24,241]),
     new ThoiGian(1, '00:10', [99]),
     new ThoiGian(2, '00:40', [41]),
     new ThoiGian(3, '01:40', [36,37]),
     new ThoiGian(4, '02:10', [56]),
     new ThoiGian(5, '03:40', [41,24]),
-    new ThoiGian(5, '05:00', [241]),
-    new ThoiGian(6, '08:00', [24, 28]),
-    new ThoiGian(7, '10:00', [32, 36]),
-    new ThoiGian(8, '06:30', [36, 28, 74]),
-    new ThoiGian(9, '14:00', [40, 44, 48])
+    new ThoiGian(6, '05:00', [241]),
+    new ThoiGian(7, '08:00', [24, 28]),
+    new ThoiGian(8, '10:00', [32, 36]),
+    new ThoiGian(9, '06:30', [36, 28, 74]),
+    new ThoiGian(10, '14:00', [40, 44, 48])
 ];
 
 danhSachThoiGian.forEach(thoiGian => {
