@@ -24,10 +24,22 @@ const danhSachTrungTamTrungChuyen = [
 
     new TrungTamTrungChuyen(36, 'TTTC03', 'TTKT Thanh Hóa', 530),
 
+    new TrungTamTrungChuyen(37, 'TTTC03', 'TTKT Thanh Hóa', 530),
+    new TrungTamTrungChuyen(37, 'TTTC03', 'TTKT Thanh Hóa', 530),
+    new TrungTamTrungChuyen(37, 'TTTC03', 'TTKT Thanh Hóa', 530),
+
+    new TrungTamTrungChuyen(41, '221GW0', 'TTKT Hưng Yên', 410),
+
+    new TrungTamTrungChuyen(64, '262GW0', 'TTKT Tây Nguyên', 640),
+    new TrungTamTrungChuyen(64, '262GW1', 'TTKT Đức Trọng', 680),
+    new TrungTamTrungChuyen(64, '262GW2', 'TTKT Bảo Lộc', 690),
+
     new TrungTamTrungChuyen(74, 'TTTC03', 'ĐGP Bình Dương 1', 740),
     new TrungTamTrungChuyen(74, 'TTTC03', 'ĐGP Bình Dương 2', 741),
     new TrungTamTrungChuyen(74, 'TTTC03', 'ĐGP Bình Dương 3', 760),
 
     new TrungTamTrungChuyen(18, 'TTTC03', 'TTKT Nam Định', 300),
-    new TrungTamTrungChuyen(35, 'TTTC04', 'TTKT Ninh Bình', 200)
+    new TrungTamTrungChuyen(35, 'TTTC04', 'TTKT Ninh Bình', 200),
+
+    new TrungTamTrungChuyen(99, '222GW0', 'TTKT Bắc Ninh', 440)
 ];
