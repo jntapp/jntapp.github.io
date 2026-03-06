@@ -74,7 +74,7 @@ function loadChiTietXeDiTheoTinh(thoiGianId, tinhId)
     {                
         if (danhSachTrungTamTrungChuyen[i].tinhid === tinhId)
         {
-            danhSachMaTrungTamTrungChuyen.push(danhSachTrungTamTrungChuyen[i].stt+ ' (' + danhSachTrungTamTrungChuyen[i].ma + ')');
+            danhSachMaTrungTamTrungChuyen.push(danhSachTrungTamTrungChuyen[i].stt); //+ ' (' + danhSachTrungTamTrungChuyen[i].ma + ')');
         }
     }
     chiTietDiv.innerHTML += danhSachMaTrungTamTrungChuyen.join(' - ');
