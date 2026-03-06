@@ -41,7 +41,7 @@ class ThoiGian
                                         span.classList.remove('diem-xe-den__selected');
                                 });
 
-                                const tatCaThoiGian = document.querySelectorAll('.thoi-gian');
+                                const tatCaThoiGian = document.querySelectorAll('.chi-tiet');
                                 tatCaThoiGian.forEach(tjan => {
                                         tjan.style.display = 'none';
                                 });
