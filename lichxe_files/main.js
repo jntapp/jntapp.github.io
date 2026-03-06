@@ -36,6 +36,7 @@ class ThoiGian
 
                             tinhDiv.addEventListener('click', () => {
                                 loadChiTietXeDiTheoTinh(this.id, tinhId);
+                                tinhDiv.classList.toggle('diem-xe-den__selected');
                             });
 
                             tdDiemXeDen.appendChild(tinhDiv);
