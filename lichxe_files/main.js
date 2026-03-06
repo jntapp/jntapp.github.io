@@ -36,9 +36,14 @@ class ThoiGian
 
                             tinhDiv.addEventListener('click', () => {
                                 loadChiTietXeDiTheoTinh(this.id, tinhId);
-                                tinhDiv.classList.toggle('diem-xe-den__selected');
+                                const tatCaDiemXeDen = document.querySelectorAll('.diem-xe-den');
+                                tatCaDiemXeDen.forEach(span => {
+                                        span.classList.remove('diem-xe-den__selected');
+                                });
+                                tinhDiv.classList.add('diem-xe-den__selected');
+                                
                             });
-
+                            
                             tdDiemXeDen.appendChild(tinhDiv);
                         });
                 tr.appendChild(tdDiemXeDen);
