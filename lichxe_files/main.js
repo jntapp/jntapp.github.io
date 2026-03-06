@@ -35,7 +35,7 @@ class ThoiGian
                             }
 
                             tinhDiv.addEventListener('click', () => {
-                                loadChiTietXeDiTheoTinh(this.id, tinhId);
+                                
                                 const tatCaDiemXeDen = document.querySelectorAll('.diem-xe-den');
                                 tatCaDiemXeDen.forEach(span => {
                                         span.classList.remove('diem-xe-den__selected');
@@ -47,6 +47,7 @@ class ThoiGian
                                 });
 
                                 tinhDiv.classList.add('diem-xe-den__selected');
+                                loadChiTietXeDiTheoTinh(this.id, tinhId);
                                 
                             });
                             
