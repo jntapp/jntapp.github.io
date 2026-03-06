@@ -11,6 +11,7 @@ class TrungTamTrungChuyen
 
 
 const danhSachTrungTamTrungChuyen = [
+    new TrungTamTrungChuyen(14, '024GW0', 'TTKT Quảng Ninh', 180),
     new TrungTamTrungChuyen(15, '024GW0', 'TTKT Hải Phòng', 170),
     new TrungTamTrungChuyen(15, '024GW1', 'Hàng phát Hải Phòng', 225),
 
