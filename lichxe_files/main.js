@@ -108,11 +108,15 @@ function showChiTietMaDoan(maDoan)
     {
         if (danhSachTrungTamTrungChuyen[i].stt === maDoan)
         {
-            alert(`Mã đoạn:${maDoan}\n ${danhSachTrungTamTrungChuyen[i].ma}\nTên TTTC: ${danhSachTrungTamTrungChuyen[i].ten}\nTỉnh: ${danhSachTinh.find(tinh => tinh.id === danhSachTrungTamTrungChuyen[i].tinhid).name}`);
+            showThongBao(`Mã đoạn:${maDoan}<br> 
+            ${danhSachTrungTamTrungChuyen[i].ma}<br>
+            Tên TTTC: ${danhSachTrungTamTrungChuyen[i].ten}<br>
+            Tỉnh: ${danhSachTinh.find(tinh => tinh.id === danhSachTrungTamTrungChuyen[i].tinhid).name}`);
             break;
         }
     }
 }
+
 
 
 const danhSachThoiGian = [
