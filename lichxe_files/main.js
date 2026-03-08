@@ -132,7 +132,7 @@ const danhSachThoiGian = [
     new ThoiGian(5, '02:10', [56]),
     new ThoiGian(6, '02:30', [15]),
     new ThoiGian(7, '03:40', [41,24]),
-    new ThoiGian(8, '05:00', [241]),
+    new ThoiGian(8, '05:00', [63, 241]),
     new ThoiGian(9, '06:30', [36, 28, 74,80]),
     new ThoiGian(10, '06:45', [70]),
 
