@@ -90,13 +90,13 @@ function loadChiTietXeDiTheoTinh(thoiGianId, tinhId)
         }
     }
 
-    for (let i = 0; i < danhSachMaTrungTamTrungChuyen.length - 1; i++)
+    for (let i = 0; i < danhSachMaTrungTamTrungChuyen.length; i++)
     {
         chiTietDiv.innerHTML += `<span onclick="showChiTietMaDoan(${danhSachMaTrungTamTrungChuyen[i]})">${danhSachMaTrungTamTrungChuyen[i]}</span>`;
 
         if (i < danhSachMaTrungTamTrungChuyen.length - 1)
         {
-            chiTietDiv.innerHTML += danhSachMaTrungTamTrungChuyen[i] + ' - ';
+            chiTietDiv.innerHTML += ' - ';
         }
     }
     chiTietDiv.style.display = 'block';
