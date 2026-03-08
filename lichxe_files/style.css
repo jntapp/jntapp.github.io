@@ -38,6 +38,7 @@ a
     border-radius: 5px;
     padding:5px;
     border:solid 0.5px rgba(0,0,0,0.3);
+    float:left;
 }
 
 .diem-xe-den__selected

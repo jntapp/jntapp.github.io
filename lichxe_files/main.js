@@ -22,7 +22,7 @@ class ThoiGian
                 tr.appendChild(tdTime);
                     const tdDiemXeDen = document.createElement('td');
                         this.danhSachTinhId.forEach(tinhId => {
-                            const tinhDiv = document.createElement('span');
+                            const tinhDiv = document.createElement('div');
                             tinhDiv.className = 'diem-xe-den';
                             tinhDiv.id = `diemXeDen-${tinhId}-${this.id}`;
                             for (let i = 0; i < danhSachTinh.length; i++) 
