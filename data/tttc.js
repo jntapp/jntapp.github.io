@@ -49,7 +49,7 @@ const danhSachTrungTamTrungChuyen = [
     new TrungTamTrungChuyen(41, '210GW0', 'TTKT Phú Thọ', 300),
     new TrungTamTrungChuyen(41, '207GW0', 'TTTC Tuyên Quang', 310),
     new TrungTamTrungChuyen(41, '214GW0', 'TTKT Lào Cai', 330),
-    new TrungTamTrungChuyen(41, 'ggggg', 'ggg TTKT Hưng Yên', 340),
+    new TrungTamTrungChuyen(41, '213GW0', 'TTTC Lai Châu', 340),
 
     new TrungTamTrungChuyen(41, '221GW0', 'TTKT Hưng Yên', 410),
 
@@ -80,7 +80,7 @@ const danhSachTrungTamTrungChuyen = [
     new TrungTamTrungChuyen(83, '297GW0', 'TTKT Kiên Giang', 850),
     new TrungTamTrungChuyen(83, '277GW0', 'TTKT Đồng Tháp', 880),
     new TrungTamTrungChuyen(83, '291GW0', 'TTKT Bạc Liêu', 930),
-    new TrungTamTrungChuyen(83, 'gggg', 'ggg TTKT Cần Thơ', 931),
+    new TrungTamTrungChuyen(83, '291GW0', 'TTKT Bạc Liêu ', 931),
 
     new TrungTamTrungChuyen(18, '228GW0', 'TTKT Nam Định', 228),
     new TrungTamTrungChuyen(35, '229GW0', 'TTKT Ninh Bình', 229),
