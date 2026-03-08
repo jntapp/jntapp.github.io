@@ -109,8 +109,8 @@ function showChiTietMaDoan(maDoan)
         if (danhSachTrungTamTrungChuyen[i].stt === maDoan)
         {
             showThongBao(`<span style="font-size:30px;font-weight:bold;">${maDoan}</span><br> 
-            <span style="font-size:26px;font-weight:bold;">${danhSachTrungTamTrungChuyen[i].ma}</span><br>
-            <center>${danhSachTrungTamTrungChuyen[i].ten}<center><br>
+            <center><span style="font-size:22px;font-weight:bold;">${danhSachTrungTamTrungChuyen[i].ma}</span><br>
+            ${danhSachTrungTamTrungChuyen[i].ten}<br>
             <center>Tuyến: ${danhSachTinh.find(tinh => tinh.id === danhSachTrungTamTrungChuyen[i].tinhid).name}</center>`);
             break;
         }
