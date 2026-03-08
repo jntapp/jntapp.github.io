@@ -99,7 +99,6 @@ function loadChiTietXeDiTheoTinh(thoiGianId, tinhId)
             chiTietDiv.innerHTML += danhSachMaTrungTamTrungChuyen[i] + ' - ';
         }
     }
-    chiTietDiv.innerHTML += danhSachMaTrungTamTrungChuyen.join(' - ');
     chiTietDiv.style.display = 'block';
 }
 
