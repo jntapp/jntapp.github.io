@@ -55,10 +55,11 @@ const danhSachTrungTamTrungChuyen = [
 
     new TrungTamTrungChuyen(41, '258GW0', 'TTKT Nha Trang', 600),
     new TrungTamTrungChuyen(41, '256GW0', 'TTKT Bình Định', 620),
-    new TrungTamTrungChuyen(41, '255GW0', 'TTKT Quảng Ngãi', 630),
     new TrungTamTrungChuyen(41, '269GW0', 'TTKT Gia Lai', 660),
 
     new TrungTamTrungChuyen(56, '236GW0', 'TTKT Đà Nẵng', 560),
+
+    new TrungTamTrungChuyen(63, '255GW0', 'TTKT Quảng Ngãi', 630),
 
     new TrungTamTrungChuyen(64, '262GW0', 'TTKT Tây Nguyên', 640),
     new TrungTamTrungChuyen(64, '263GW1', 'TTKT Đức Trọng (LĐ)', 680),
