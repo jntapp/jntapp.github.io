@@ -64,6 +64,9 @@ const danhSachTrungTamTrungChuyen = [
     new TrungTamTrungChuyen(64, '263GW1', 'TTKT Đức Trọng (LĐ)', 680),
     new TrungTamTrungChuyen(64, '263GW0', 'TTKT Bảo Lộc', 690),
 
+    new TrungTamTrungChuyen(70, '251GW0', 'TTKT Đồng Nai', 700),
+    new TrungTamTrungChuyen(70, '254GW0', 'ĐGP Vũng Tàu', 720),
+
     new TrungTamTrungChuyen(74, '274GW0', 'ĐGP Bình Dương', 740),
     new TrungTamTrungChuyen(74, '274GW0', 'ĐGP Bình Dương', 741),
     new TrungTamTrungChuyen(74, '271GW0', 'ĐGP Bình Phước', 760),
