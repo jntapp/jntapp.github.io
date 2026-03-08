@@ -20,6 +20,7 @@ const danhSachTinh = [
     new Tinh(37, 'Nghệ An'),
     new Tinh(41, 'Hưng Yên'),
     new Tinh(56, 'Đà Nẵng'),
+    new Tinh(63, 'Quảng Ngãi'),
     new Tinh(64, 'Tây Nguyên'),
     new Tinh(70, 'Đồng Nai'),
     new Tinh(74, 'Bình Dương'),
