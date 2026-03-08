@@ -13,4 +13,12 @@ document.body.appendChild(divTraCuu);
 function traCuuMaDoan()
 {
   let noiDungTimKiem = document.getElementById("inputTimKiem").value;
+for (let i =0; i< danhSachTrungTamTrungChuyen.length; i++)
+{
+   if (danhSachTrungTamTrungChuyen[i] == noiDungTimKiem)
+{
+
+ break;
+}
+}
 }
