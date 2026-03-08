@@ -89,8 +89,30 @@ function loadChiTietXeDiTheoTinh(thoiGianId, tinhId)
             danhSachMaTrungTamTrungChuyen.push(danhSachTrungTamTrungChuyen[i].stt); //+ ' (' + danhSachTrungTamTrungChuyen[i].ma + ')');
         }
     }
+
+    for (let i = 0; i < danhSachMaTrungTamTrungChuyen.length - 1; i++)
+    {
+        chiTietDiv.innerHTML += `<span onclick="showChiTietMaDoan(${danhSachMaTrungTamTrungChuyen[i]})">${danhSachMaTrungTamTrungChuyen[i]}</span>`;
+
+        if (i < danhSachMaTrungTamTrungChuyen.length - 1)
+        {
+            chiTietDiv.innerHTML += danhSachMaTrungTamTrungChuyen[i] + ' - ';
+        }
+    }
     chiTietDiv.innerHTML += danhSachMaTrungTamTrungChuyen.join(' - ');
     chiTietDiv.style.display = 'block';
+}
+
+function showChiTietMaDoan(maDoan)
+{
+    for (let i = 0; i < danhSachTrungTamTrungChuyen.length; i++)
+    {
+        if (danhSachTrungTamTrungChuyen[i].stt === maDoan)
+        {
+            alert(`Mã đoạn:${maDoan}\n ${danhSachTrungTamTrungChuyen[i].ma}\nTên TTTC: ${danhSachTrungTamTrungChuyen[i].ten}\nTỉnh: ${danhSachTinh.find(tinh => tinh.id === danhSachTrungTamTrungChuyen[i].tinhid).name}`);
+            break;
+        }
+    }
 }
 
 
