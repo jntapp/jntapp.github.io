@@ -24,7 +24,7 @@ function traCuuMaDoan()
   divTraCuu_ketQua.innerHTML = '';
   for (let i =0; i< danhSachTrungTamTrungChuyen.length; i++)
   {
-    if (danhSachTrungTamTrungChuyen[i] == noiDungTimKiem)
+    if (danhSachTrungTamTrungChuyen[i].stt == noiDungTimKiem)
     {
       divTraCuu_ketQua.innerHTML = `<center><span style="font-size:22px;font-weight:bold;">${danhSachTrungTamTrungChuyen[i].ma}</span><br>
             ${danhSachTrungTamTrungChuyen[i].ten}<br>
