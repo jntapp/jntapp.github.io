@@ -21,38 +21,42 @@ class ThoiGian
                     tdTime.appendChild(thoiGianDiv);
                 tr.appendChild(tdTime);
                     const tdDiemXeDen = document.createElement('td');
-                        this.danhSachTinhId.forEach(tinhId => {
-                            const tinhDiv = document.createElement('div');
-                            tinhDiv.className = 'diem-xe-den';
-                            tinhDiv.id = `diemXeDen-${tinhId}-${this.id}`;
-                            for (let i = 0; i < danhSachTinh.length; i++) 
-                            {
-                                if (danhSachTinh[i].id === tinhId) 
+                        const diemXeDenContainer = document.createElement('div');
+                        diemXeDenContainer.className = 'diem-xe-den__container';
+                        
+                            this.danhSachTinhId.forEach(tinhId => {
+                                const tinhDiv = document.createElement('div');
+                                tinhDiv.className = 'diem-xe-den';
+                                tinhDiv.id = `diemXeDen-${tinhId}-${this.id}`;
+                                for (let i = 0; i < danhSachTinh.length; i++) 
                                 {
-                                    tinhDiv.innerHTML = danhSachTinh[i].name;
-                                    break;
+                                    if (danhSachTinh[i].id === tinhId) 
+                                    {
+                                        tinhDiv.innerHTML = danhSachTinh[i].name;
+                                        break;
+                                    }
                                 }
-                            }
 
-                            tinhDiv.addEventListener('click', () => {
-                                
-                                const tatCaDiemXeDen = document.querySelectorAll('.diem-xe-den');
-                                tatCaDiemXeDen.forEach(span => {
-                                        span.classList.remove('diem-xe-den__selected');
+                                tinhDiv.addEventListener('click', () => {
+                                    
+                                    const tatCaDiemXeDen = document.querySelectorAll('.diem-xe-den');
+                                    tatCaDiemXeDen.forEach(span => {
+                                            span.classList.remove('diem-xe-den__selected');
+                                    });
+
+                                    const tatCaThoiGian = document.querySelectorAll('.chi-tiet');
+                                    tatCaThoiGian.forEach(tjan => {
+                                            tjan.style.display = 'none';
+                                    });
+
+                                    tinhDiv.classList.add('diem-xe-den__selected');
+                                    loadChiTietXeDiTheoTinh(this.id, tinhId);
+                                    
                                 });
-
-                                const tatCaThoiGian = document.querySelectorAll('.chi-tiet');
-                                tatCaThoiGian.forEach(tjan => {
-                                        tjan.style.display = 'none';
-                                });
-
-                                tinhDiv.classList.add('diem-xe-den__selected');
-                                loadChiTietXeDiTheoTinh(this.id, tinhId);
                                 
+                                diemXeDenContainer.appendChild(tinhDiv);
                             });
-                            
-                            tdDiemXeDen.appendChild(tinhDiv);
-                        });
+                    tdDiemXeDen.appendChild(diemXeDenContainer);
                 tr.appendChild(tdDiemXeDen);
             tbl.appendChild(tr);
         container.appendChild(tbl);
