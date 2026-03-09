@@ -55,7 +55,7 @@ function traCuuMaTuyen()
   divTraCuu_ketQua.innerHTML = '';
   for (let i =0; i< danhSachTrungTamTrungChuyen.length; i++)
   {
-    if (danhSachTrungTamTrungChuyen[i].ma.indexOf(noiDungTimKiem) !=-1)
+    if (danhSachTrungTamTrungChuyen[i].ma.indexOf(noiDungTimKiem) !==-1)
     {
       divTraCuu_ketQua.innerHTML += `<span style="font-size:18px;font-weight:bold;">${danhSachTrungTamTrungChuyen[i].ma}</span><br>
             ${danhSachTrungTamTrungChuyen[i].ten}<br>
