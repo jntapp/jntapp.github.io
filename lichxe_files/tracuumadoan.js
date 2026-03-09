@@ -24,7 +24,7 @@ function traCuuMaDoan()
     {
       divTraCuu_ketQua.innerHTML = `<center><span style="font-size:22px;font-weight:bold;">${danhSachTrungTamTrungChuyen[i].ma}</span><br>
             ${danhSachTrungTamTrungChuyen[i].ten}<br>
-            <center>Tuyến: ${danhSachTinh.find(tinh => tinh.id === danhSachTrungTamTrungChuyen[i].tinhid).name}</center>`);
+            <center>Tuyến: ${danhSachTinh.find(tinh => tinh.id === danhSachTrungTamTrungChuyen[i].tinhid).name}</center>`;
         break;
     }
   }
