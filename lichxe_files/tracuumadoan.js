@@ -5,6 +5,9 @@ divTraCuu.className = "divTraCuu";
 divTraCuu.appendChild(titleTraCuu);
   const inputTimKiem = document.createElement("input");
   inputTimKiem.type = "text";
+  inputTimKiem.style.padding = "6px";
+  inputTimKiem.style.marginBottom = "10px";
+  inputTimKiem.style.width = "100%";
   inputTimKiem.id = "inputTimKiem";
   inputTimKiem.addEventListener("keyup",function(){
   traCuuMaDoan();
