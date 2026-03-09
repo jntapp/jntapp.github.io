@@ -46,3 +46,21 @@ function traCuuMaDoan()
     }
   }
 }
+
+
+
+function traCuuMaTuyen()
+{
+  let noiDungTimKiem = document.getElementById("inputTimKiemMa").value;
+  divTraCuu_ketQua.innerHTML = '';
+  for (let i =0; i< danhSachTrungTamTrungChuyen.length; i++)
+  {
+    if (danhSachTrungTamTrungChuyen[i].ma.indexOf(noiDungTimKiem) !=-1)
+    {
+      divTraCuu_ketQua.innerHTML += `<span style="font-size:18px;font-weight:bold;">${danhSachTrungTamTrungChuyen[i].ma}</span><br>
+            ${danhSachTrungTamTrungChuyen[i].ten}<br>
+            <i>Tuyến: ${danhSachTinh.find(tinh => tinh.id === danhSachTrungTamTrungChuyen[i].tinhid).name}</i><br>`;
+        
+    }
+  }
+}
