@@ -124,21 +124,22 @@ function showChiTietMaDoan(maDoan)
 
 
 const danhSachThoiGian = [
+    new ThoiGian(40, '20:30', [70]),
     new ThoiGian(41, '21:40', [64,15]),
-    new ThoiGian(42, '22:40', [90]),
-    new ThoiGian(43, '22:45', [74]),
+    new ThoiGian(42, '23:00', [90]),
+    
 
     new ThoiGian(0, '00:00', [24,241]),
     new ThoiGian(1, '00:10', [99]),
     new ThoiGian(2, '00:40', [41]),
-    new ThoiGian(3, '01:15', [70]),
+    new ThoiGian(3, '01:30', [74]),
     new ThoiGian(4, '01:40', [36,37]),
     new ThoiGian(5, '02:10', [56]),
     new ThoiGian(6, '02:30', [15]),
     new ThoiGian(7, '03:40', [41,24]),
     new ThoiGian(8, '05:00', [63, 241]),
-    new ThoiGian(9, '06:30', [36, 28, 74,80]),
-    new ThoiGian(10, '06:45', [70]),
+    new ThoiGian(9, '06:30', [36, 28, 74,80,83,90]),
+    new ThoiGian(10, '07:00', [70,74]),
 
     new ThoiGian(20, '08:00', [24, 28]),
 
