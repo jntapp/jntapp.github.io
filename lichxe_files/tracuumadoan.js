@@ -20,7 +20,6 @@ document.body.appendChild(divTraCuu);
 
 function traCuuMaDoan()
 {
-  console.log("Đang traCuuMaDoan");
   let noiDungTimKiem = document.getElementById("inputTimKiem").value;
   divTraCuu_ketQua.innerHTML = '';
   for (let i =0; i< danhSachTrungTamTrungChuyen.length; i++)
