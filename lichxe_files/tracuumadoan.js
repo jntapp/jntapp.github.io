@@ -1,5 +1,8 @@
 const divTraCuu =  document.createElement("div");
 divTraCuu.className = "divTraCuu";
+  const titleTraCuu = document.createElement("div");
+  titleTraCuu.innerHTML = "<center><span style='font-size:18px;font-weight:bold;'>Tra cứu mã đoạn</span></center><br>";
+divTraCuu.appendChild(titleTraCuu);
   const inputTimKiem = document.createElement("input");
   inputTimKiem.type = "text";
   inputTimKiem.id = "inputTimKiem";
