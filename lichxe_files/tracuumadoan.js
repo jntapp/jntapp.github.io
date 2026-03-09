@@ -9,12 +9,10 @@ divTraCuu.appendChild(titleTraCuu);
   inputTimKiem.addEventListener("keyup",function(){
   traCuuMaDoan();
   });
-
+divTraCuu.appendChild(inputTimKiem);
   const divTraCuu_ketQua = document.createElement("div");
   divTraCuu_ketQua.id = "divTraCuu_ketQua";
-  divTraCuu.appendChild(divTraCuu_ketQua);
-
-divTraCuu.appendChild(inputTimKiem);
+divTraCuu.appendChild(divTraCuu_ketQua);
 document.body.appendChild(divTraCuu);
 
 function traCuuMaDoan()
