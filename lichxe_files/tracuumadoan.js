@@ -27,9 +27,9 @@ function traCuuMaDoan()
   {
     if (danhSachTrungTamTrungChuyen[i].stt == noiDungTimKiem)
     {
-      divTraCuu_ketQua.innerHTML = `<center><span style="font-size:22px;font-weight:bold;">${danhSachTrungTamTrungChuyen[i].ma}</span><br>
+      divTraCuu_ketQua.innerHTML = `<span style="font-size:18px;font-weight:bold;">${danhSachTrungTamTrungChuyen[i].ma}</span><br>
             ${danhSachTrungTamTrungChuyen[i].ten}<br>
-            <center>Tuyến: ${danhSachTinh.find(tinh => tinh.id === danhSachTrungTamTrungChuyen[i].tinhid).name}</center>`;
+            Tuyến: ${danhSachTinh.find(tinh => tinh.id === danhSachTrungTamTrungChuyen[i].tinhid).name}`;
         break;
     }
   }
