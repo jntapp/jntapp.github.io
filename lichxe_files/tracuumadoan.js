@@ -1,10 +1,11 @@
 const divTraCuu =  document.createElement("div");
 divTraCuu.className = "divTraCuu";
   const titleTraCuu = document.createElement("div");
-  titleTraCuu.innerHTML = "<span style='font-size:18px;font-weight:bold;'>Tra cứu mã đoạn</span><br>";
+  titleTraCuu.innerHTML = "<span style='font-size:18px;font-weight:bold;'>Tra cứu</span><br>";
 divTraCuu.appendChild(titleTraCuu);
   const inputTimKiem = document.createElement("input");
   inputTimKiem.type = "text";
+inputTimKiem.placeHolder = "Mã đoạn";
   inputTimKiem.style.padding = "8px";
   inputTimKiem.style.marginBottom = "10px";
   inputTimKiem.style.width = "45%";
@@ -15,6 +16,7 @@ divTraCuu.appendChild(titleTraCuu);
 
 const inputTimKiemMa = document.createElement("input");
   inputTimKiemMa.type = "text";
+inputTimKiemMa.placeHolder = "Mã TT";
   inputTimKiemMa.style.padding = "8px";
   inputTimKiemMa.style.marginBottom = "10px";
 inputTimKiemMa.style.marginLeft = "10px";
