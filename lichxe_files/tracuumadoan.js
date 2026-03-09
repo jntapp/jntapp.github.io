@@ -20,7 +20,7 @@ const inputTimKiemMa = document.createElement("input");
 inputTimKiemMa.style.marginLeft = "10px";
   inputTimKiemMa.style.width = "45%";
   inputTimKiemMa.id = "inputTimKiemMa";
-  inputTimKiem.addEventListener("keyup",function(){
+  inputTimKiemMa.addEventListener("keyup",function(){
   traCuuMaTuyen();
   });
 
