@@ -66,4 +66,9 @@ if (noiDungTimKiem.length > 2)
     }
   }
 }
+else
+{
+  divTraCuu_ketQua.innerHTML = '';
+}
+
 }
