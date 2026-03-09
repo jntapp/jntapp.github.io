@@ -26,11 +26,11 @@ inputTimKiemMa.style.marginLeft = "10px";
 
 divTraCuu.appendChild(inputTimKiem);
 divTraCuu.appendChild(inputTimKiemMa);
-  const divTraCuu_ketQua = document.createElement("div");
-  divTraCuu_ketQua.id = "divTraCuu_ketQua";
-divTraCuu.appendChild(divTraCuu_ketQua);
+  
 document.body.appendChild(divTraCuu);
-
+const divTraCuu_ketQua = document.createElement("div");
+  divTraCuu_ketQua.id = "divTraCuu_ketQua";
+document.body.appendChild(divTraCuu_ketQua);
 function traCuuMaDoan()
 {
   let noiDungTimKiem = document.getElementById("inputTimKiem").value;
@@ -52,6 +52,8 @@ function traCuuMaDoan()
 function traCuuMaTuyen()
 {
   let noiDungTimKiem = document.getElementById("inputTimKiemMa").value;
+if (noiDungTimKiem.length > 2)
+{
   divTraCuu_ketQua.innerHTML = '';
   for (let i =0; i< danhSachTrungTamTrungChuyen.length; i++)
   {
@@ -63,4 +65,5 @@ function traCuuMaTuyen()
         
     }
   }
+}
 }
