@@ -7,12 +7,25 @@ divTraCuu.appendChild(titleTraCuu);
   inputTimKiem.type = "text";
   inputTimKiem.style.padding = "8px";
   inputTimKiem.style.marginBottom = "10px";
-  inputTimKiem.style.width = "90%";
+  inputTimKiem.style.width = "45%";
   inputTimKiem.id = "inputTimKiem";
   inputTimKiem.addEventListener("keyup",function(){
   traCuuMaDoan();
   });
+
+const inputTimKiemMa = document.createElement("input");
+  inputTimKiemMa.type = "text";
+  inputTimKiemMa.style.padding = "8px";
+  inputTimKiemMa.style.marginBottom = "10px";
+inputTimKiemMa.style.marginLeft = "10px";
+  inputTimKiemMa.style.width = "45%";
+  inputTimKiemMa.id = "inputTimKiemMa";
+  inputTimKiem.addEventListener("keyup",function(){
+  traCuuMaTuyen();
+  });
+
 divTraCuu.appendChild(inputTimKiem);
+divTraCuu.appendChild(inputTimKiemMa);
   const divTraCuu_ketQua = document.createElement("div");
   divTraCuu_ketQua.id = "divTraCuu_ketQua";
 divTraCuu.appendChild(divTraCuu_ketQua);
