@@ -141,9 +141,7 @@ const danhSachThoiGian = [
     new ThoiGian(9, '06:30', [36, 74,80,83,90]),
     new ThoiGian(10, '07:00', [28, 36, 56, 70,74, 80]),
 
-    new ThoiGian(20, '08:00', [24, 28]),
-
-    new ThoiGian(30, '14:00', [40, 44, 48])
+    new ThoiGian(30, '14:00', [41])
 ];
 
 danhSachThoiGian.forEach(thoiGian => {
