@@ -1,3 +1,6 @@
+const divTraCuu_container = document.createElement("div");
+divTraCuu_container.className = "divTraCuu_container";
+
 const divTraCuu =  document.createElement("div");
 divTraCuu.className = "divTraCuu";
   const titleTraCuu = document.createElement("div");
