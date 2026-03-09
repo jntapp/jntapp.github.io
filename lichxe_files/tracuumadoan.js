@@ -33,6 +33,7 @@ const divTraCuu_ketQua = document.createElement("div");
 document.body.appendChild(divTraCuu_ketQua);
 function traCuuMaDoan()
 {
+document.getElementById("inputTimKiemMa").value = '';
   let noiDungTimKiem = document.getElementById("inputTimKiem").value;
   divTraCuu_ketQua.innerHTML = '';
   for (let i =0; i< danhSachTrungTamTrungChuyen.length; i++)
@@ -51,6 +52,7 @@ function traCuuMaDoan()
 
 function traCuuMaTuyen()
 {
+document.getElementById("inputTimKiem").value = '';
   let noiDungTimKiem = document.getElementById("inputTimKiemMa").value;
 if (noiDungTimKiem.length > 2)
 {
