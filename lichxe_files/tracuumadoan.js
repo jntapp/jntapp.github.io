@@ -1,13 +1,13 @@
 const divTraCuu =  document.createElement("div");
 divTraCuu.className = "divTraCuu";
   const titleTraCuu = document.createElement("div");
-  titleTraCuu.innerHTML = "<center><span style='font-size:18px;font-weight:bold;'>Tra cứu mã đoạn</span></center><br>";
+  titleTraCuu.innerHTML = "<span style='font-size:18px;font-weight:bold;'>Tra cứu mã đoạn</span><br>";
 divTraCuu.appendChild(titleTraCuu);
   const inputTimKiem = document.createElement("input");
   inputTimKiem.type = "text";
-  inputTimKiem.style.padding = "6px";
+  inputTimKiem.style.padding = "8px";
   inputTimKiem.style.marginBottom = "10px";
-  inputTimKiem.style.width = "100%";
+  inputTimKiem.style.width = "90%";
   inputTimKiem.id = "inputTimKiem";
   inputTimKiem.addEventListener("keyup",function(){
   traCuuMaDoan();
