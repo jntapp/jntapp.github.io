@@ -5,7 +5,7 @@ a
 
 .line 
 {
-    margin-top:10px;
+    margin-top:6px;
     padding:6px;
     border-radius:5px;
     border:solid 0.5px rgba(0,0,0,0.3);
@@ -34,7 +34,7 @@ a
 .diem-xe-den
 {
     color:rgba(0,0,0,0.75);
-    margin-left:10px;
+    margin-left:6px;
     border-radius: 5px;
     padding:5px;
     border:solid 0.5px rgba(0,0,0,0.3);
@@ -52,13 +52,13 @@ a
 {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 6px;
 }
 
 .divTraCuu
 {
     display:flex;
-    gap:8px;
+    gap:6px;
 }
 
 .divTraCuu_container
@@ -69,9 +69,9 @@ a
     border-radius:5px;
     border:solid 0.5px rgba(0,0,0,0.3);
     background:white;
-    
+
     flex-wrap: wrap;
-    gap:8px;
+    gap:6px;
     flex-direction:column;
 }
 
