@@ -1,0 +1,11 @@
+.line 
+{
+    margin-top:6px;
+    border-radius:5px;
+    border:solid 0.5px rgba(0,0,0,0.3);
+    background:red;
+    padding:10px;
+    color:white;
+}
+
+    
