@@ -41,7 +41,6 @@ class MenuButton
 const menu = new Menu([
     new MenuButton('Home', '/index.html'),
     new MenuButton('Lịch xe', '/lichxe.html'),
-    new MenuButton('Đóng gói', 'https://jtexpress.vn/vi/quy-cach-dong-goi-hang-hoa'),
     new MenuButton('Tự động', '/dong-bao-tu-dong/yeucau.html'),
 ]);
 
