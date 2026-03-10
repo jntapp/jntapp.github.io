@@ -3,8 +3,6 @@ divTraCuu_container.className = "divTraCuu_container";
   const divTraCuu =  document.createElement("div");
   divTraCuu.className = "divTraCuu";
     const titleTraCuu = document.createElement("div");
-    titleTraCuu.innerHTML = "<span style='font-size:16px;'>Tra cứu</span><br>";
-  divTraCuu.appendChild(titleTraCuu);
     const inputTimKiem = document.createElement("input");
     inputTimKiem.type = "text";
     inputTimKiem.placeholder = "Mã đoạn";
