@@ -7,7 +7,7 @@ divTraCuu_container.className = "divTraCuu_container";
   divTraCuu.appendChild(titleTraCuu);
     const inputTimKiem = document.createElement("input");
     inputTimKiem.type = "text";
-    inputTimKiem.placeHolder = "Mã đoạn";
+    inputTimKiem.placeholder = "Mã đoạn";
     inputTimKiem.style.padding = "8px";
     inputTimKiem.style.marginBottom = "10px";
     inputTimKiem.style.width = "45%";
@@ -18,7 +18,7 @@ divTraCuu_container.className = "divTraCuu_container";
 
   const inputTimKiemMa = document.createElement("input");
     inputTimKiemMa.type = "text";
-  inputTimKiemMa.placeHolder = "Mã TT";
+  inputTimKiemMa.placeholder = "Mã TT";
     inputTimKiemMa.style.padding = "8px";
     inputTimKiemMa.style.marginBottom = "10px";
   inputTimKiemMa.style.marginLeft = "10px";
