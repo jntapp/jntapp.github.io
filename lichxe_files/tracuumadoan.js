@@ -69,7 +69,7 @@ if (noiDungTimKiem.length > 2)
   {
     if (danhSachTrungTamTrungChuyen[i].ma.indexOf(noiDungTimKiem) !==-1)
     {
-      divTraCuu_ketQua.innerHTML += `<span style="font-weight:bold;">${danhSachTrungTamTrungChuyen[i].stt}</span><br><span style="font-size:14px;"><span style="font-weight:bold;">${danhSachTrungTamTrungChuyen[i].ma}</span><br>
+      divTraCuu_ketQua.innerHTML += `<hr style="100%"><span style="font-weight:bold;">${danhSachTrungTamTrungChuyen[i].stt}</span><br><span style="font-size:14px;"><span style="font-weight:bold;">${danhSachTrungTamTrungChuyen[i].ma}</span><br>
             ${danhSachTrungTamTrungChuyen[i].ten}<br>
             <i>Tuyến: ${danhSachTinh.find(tinh => tinh.id === danhSachTrungTamTrungChuyen[i].tinhid).name}</i></span><br>`;
         
