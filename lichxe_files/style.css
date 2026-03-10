@@ -66,6 +66,14 @@ gap:8px;
     background:white;
 }
 
+.divTraCuu_container
+{
+    display:flex;
+    flex-wrap: wrap;
+    gap:8px;
+    flex-direction:column;
+}
+
 .thong-bao
 {
     position: fixed;

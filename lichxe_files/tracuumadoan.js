@@ -1,41 +1,44 @@
 const divTraCuu_container = document.createElement("div");
 divTraCuu_container.className = "divTraCuu_container";
+  const divTraCuu =  document.createElement("div");
+  divTraCuu.className = "divTraCuu";
+    const titleTraCuu = document.createElement("div");
+    titleTraCuu.innerHTML = "<span style='font-size:16px;'>Tra cứu</span><br>";
+  divTraCuu.appendChild(titleTraCuu);
+    const inputTimKiem = document.createElement("input");
+    inputTimKiem.type = "text";
+    inputTimKiem.placeHolder = "Mã đoạn";
+    inputTimKiem.style.padding = "8px";
+    inputTimKiem.style.marginBottom = "10px";
+    inputTimKiem.style.width = "45%";
+    inputTimKiem.id = "inputTimKiem";
+    inputTimKiem.addEventListener("keyup",function(){
+      traCuuMaDoan();
+    });
 
-const divTraCuu =  document.createElement("div");
-divTraCuu.className = "divTraCuu";
-  const titleTraCuu = document.createElement("div");
-  titleTraCuu.innerHTML = "<span style='font-size:18px;font-weight:bold;'>Tra cứu</span><br>";
-divTraCuu.appendChild(titleTraCuu);
-  const inputTimKiem = document.createElement("input");
-  inputTimKiem.type = "text";
-inputTimKiem.placeHolder = "Mã đoạn";
-  inputTimKiem.style.padding = "8px";
-  inputTimKiem.style.marginBottom = "10px";
-  inputTimKiem.style.width = "45%";
-  inputTimKiem.id = "inputTimKiem";
-  inputTimKiem.addEventListener("keyup",function(){
-  traCuuMaDoan();
-  });
+  const inputTimKiemMa = document.createElement("input");
+    inputTimKiemMa.type = "text";
+  inputTimKiemMa.placeHolder = "Mã TT";
+    inputTimKiemMa.style.padding = "8px";
+    inputTimKiemMa.style.marginBottom = "10px";
+  inputTimKiemMa.style.marginLeft = "10px";
+    inputTimKiemMa.style.width = "45%";
+    inputTimKiemMa.id = "inputTimKiemMa";
+    inputTimKiemMa.addEventListener("keyup",function(){
+    traCuuMaTuyen();
+    });
 
-const inputTimKiemMa = document.createElement("input");
-  inputTimKiemMa.type = "text";
-inputTimKiemMa.placeHolder = "Mã TT";
-  inputTimKiemMa.style.padding = "8px";
-  inputTimKiemMa.style.marginBottom = "10px";
-inputTimKiemMa.style.marginLeft = "10px";
-  inputTimKiemMa.style.width = "45%";
-  inputTimKiemMa.id = "inputTimKiemMa";
-  inputTimKiemMa.addEventListener("keyup",function(){
-  traCuuMaTuyen();
-  });
-
-divTraCuu.appendChild(inputTimKiem);
-divTraCuu.appendChild(inputTimKiemMa);
-  
-document.body.appendChild(divTraCuu);
-const divTraCuu_ketQua = document.createElement("div");
+  divTraCuu.appendChild(inputTimKiem);
+  divTraCuu.appendChild(inputTimKiemMa);
+divTraCuu_container.appendChild(divTraCuu);
+  const divTraCuu_ketQua = document.createElement("div");
   divTraCuu_ketQua.id = "divTraCuu_ketQua";
-document.body.appendChild(divTraCuu_ketQua);
+divTraCuu_container.appendChild(divTraCuu_ketQua);
+
+
+document.body.appendChild(divTraCuu_container);
+
+
 function traCuuMaDoan()
 {
 document.getElementById("inputTimKiemMa").value = '';
