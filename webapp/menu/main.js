@@ -39,8 +39,8 @@ class MenuButton
 
 
 const menu = new Menu([
-    new MenuButton('Home', '/index.html'),
-    new MenuButton('Lịch xe', '/lichxe.html'),
+    new MenuButton('Home', 'https://script.google.com/macros/s/AKfycbwyJMGL0BT8gQuhiN4jNCwaJYIfYx43RiMx7B1uYQffgv-KH55tv3xLTRedENm6k1Ob/exec'),
+    new MenuButton('Lịch xe', 'https://script.google.com/macros/s/AKfycbwyJMGL0BT8gQuhiN4jNCwaJYIfYx43RiMx7B1uYQffgv-KH55tv3xLTRedENm6k1Ob/exec?page=lichxe'),
     new MenuButton('Tự động', '/dong-bao-tu-dong/yeucau.html'),
 ]);
 
