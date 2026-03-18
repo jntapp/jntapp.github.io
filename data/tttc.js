@@ -84,7 +84,11 @@ const danhSachTrungTamTrungChuyen = [
     new TrungTamTrungChuyen(83, '291GW0', 'TTKT Bạc Liêu', 930),
     new TrungTamTrungChuyen(83, '291GW0', 'TTKT Bạc Liêu ', 931),
 
-    new TrungTamTrungChuyen(18, '228GW0', 'TTKT Nam Định', 228),
+    new TrungTamTrungChuyen(15, '226GW0', 'Hàng phát Hà Nam', 226),
+    new TrungTamTrungChuyen(15, '227GW0', 'Hàng phát Thái Bình', 227),
+
+    new TrungTamTrungChuyen(18, '228GW0', 'TTKT Nam Định', 420),
+    new TrungTamTrungChuyen(15, '228GW0', 'Hàng phát Nam Định', 228),
     new TrungTamTrungChuyen(35, '229GW0', 'TTKT Ninh Bình', 229),
 
     new TrungTamTrungChuyen(90, '272GW0', 'TTKT Long An', 870),
