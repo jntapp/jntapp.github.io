@@ -14,10 +14,10 @@ function checkUser()
       {
         window.location.href = "#?page=login";
       }
-    }).getUserStatus();
+    }).getUserStatus(key);
   }
   else
   {
-    
+    window.location.href = "#?page=login";
   }
 }
