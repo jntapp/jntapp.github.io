@@ -143,7 +143,3 @@ const danhSachThoiGian = [
 
     new ThoiGian(30, '14:00', [41])
 ];
-
-danhSachThoiGian.forEach(thoiGian => {
-    thoiGian.render();
-});
