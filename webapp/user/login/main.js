@@ -11,5 +11,9 @@ function doLogin()
       localStorage.setItem("userKey", status.userKey);
       window.location.href = "#?page=index";
     }
-  }).doLogin(JSON.stringify(loginInfor));   
+    else
+    {
+      alert(status.message);
+    }
+  }).doLogin(JSON.stringify(loginInfor));
 }
