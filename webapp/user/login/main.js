@@ -2,7 +2,7 @@ function doLogin()
 {
   let userName = document.getElementById("userName");
   let pass = document.getElementById("passWord");
-  let loginInfor = {userName: userName; passWord: pass};
+  let loginInfor = {userName: userName, passWord: pass};
   google.script.run.withSuccessHandler(function(status) 
   {
     status = JSON.parse(status);
