@@ -2,6 +2,7 @@ var status = {status: 'notOk', userKey: '0', message:''};
 function checkUser()
 {
   let key = localStorage.getItem("userKey");
+  console.log(key);
   if (key)
   {
     google.script.run.withSuccessHandler(function(user) 
@@ -16,6 +17,7 @@ function checkUser()
   }
   else
   {
+    console.log('key khong ton tai');
     showLogin();
   }
 }
