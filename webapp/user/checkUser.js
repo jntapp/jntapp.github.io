@@ -20,6 +20,7 @@ function checkUser()
   else
   {
     console.log('key khong ton tai');
+    localStorage.setItem('loginStatus', 'notOk');
     showLogin();
   }
 }
