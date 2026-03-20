@@ -77,6 +77,6 @@ dangNhap.render();
 
 function showLogin()
 {
-  document.getElementById('loginContainer').style.display = 'block';
+  document.getElementById('loginContainer').style.display = 'flex';
   document.getElementById('passWord').value = '';
 }
