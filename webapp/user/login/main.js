@@ -4,11 +4,11 @@ function doLogin()
   let pass = document.getElementById("passWord").value;
   if (userName.length < 3)
   {
-    alert('Vui lòng kiểm tra tên đăng nhập!");
+    alert('Vui lòng kiểm tra tên đăng nhập!');
   }
   else if (pass.length < 3)
   {
-    alert('Vui lòng kiểm tra lại mật khẩu!");
+    alert('Vui lòng kiểm tra lại mật khẩu!');
   }
   else
   {
