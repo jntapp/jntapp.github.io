@@ -9,13 +9,18 @@ class Menu
     {
         const menuContainer = document.createElement('div');
         menuContainer.className = 'menu';
-
-        this.danhSachButton.forEach(button => 
-        {
-            const buttonElement = button.render(); 
-            menuContainer.appendChild(buttonElement);
-        });
-
+            const menuTable = document.createElement('table');
+                const menuTable_tr = document.createElement('tr');
+                    this.danhSachButton.forEach(button => 
+                    {
+                        let menuTable_tr_td = document.createElement('td');
+                            const buttonElement = button.render();
+                            menuTable_tr_td.appendChild(buttonElement);
+                        menuTable_tr.appendChild(menuTable_tr_td);
+                    });
+                    
+                menuTable.appendChild(menuTable_tr);
+            menuContainer.appendChild(menuTable);
         document.body.appendChild(menuContainer);
     }
 }
