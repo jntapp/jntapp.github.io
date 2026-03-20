@@ -14,13 +14,13 @@ function checkUser()
       }
       else
       {
-        document.getElementById('').style.display = 'block';
+        showLogin();
       }
     }).getUserStatus(key);
   }
   else
   {
-    window.location.href = "#?page=login";
+    showLogin();
   }
 }
 
