@@ -14,7 +14,7 @@
 .login__div 
 {
     margin-top:60px;
-    background: -webkit-linear-gradient(top left, red, #ffcaca);
+    background: -webkit-linear-gradient(top left, red, #ff7100);
 }
 
 
@@ -41,7 +41,7 @@
     box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
     border-radius:3px;
     z-index: 101;
-    background: -webkit-linear-gradient(top left, #25A55E, #9ABE5B);
+    background: -webkit-linear-gradient(top left, red, #ff7100);
 }
     
 @media only screen and (min-width: 577px)
