@@ -9,11 +9,21 @@ function doLogin()
     if (status.status == 'ok')
     {
       localStorage.setItem("userKey", status.userKey);
-      window.location.href = "#?page=index";
+      showLoginSuccessfull();
+      //window.location.href = "#?page=index";
     }
     else
     {
       alert(status.message);
     }
   }).doLogin(JSON.stringify(loginInfor));
+}
+
+function showLoginSuccessfull()
+{
+  document.getElementById('loginError').style.display = 'none';
+  document.getElementById('loginForm').style.display = 'none';
+  setTimeout(function(){
+    document.getElementById('loginSuccessfull').style.display = 'block';
+  },500);
 }
