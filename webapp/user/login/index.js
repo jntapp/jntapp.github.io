@@ -28,12 +28,12 @@ class DangNhap
         </div>
         
         <font color="white">
-          <div class="login__error" style="text-align:center;">
+          <div class="login__error" id="loginError" style="text-align:center;">
             Vui lòng đăng nhập để vào trang này <br> Please login to access this page
           </div>
         </font>
           
-        <table style="width:100%;padding:8px;" border="0">
+        <table style="width:100%;padding:8px;" border="0" id="loginForm" class="login__form">
           <tr>
             <td>
             </td>
