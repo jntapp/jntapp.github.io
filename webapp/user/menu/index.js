@@ -1,6 +1,6 @@
 const menuUserButton = document.createElement('a');
 menuUserButton.id = "menuUserButton";
-menuUserButton.innerHTML = `<img src="https://jntapp.github.io/webapp/user/menu/user.svg" style="height:30px;" class="menu__icon-menu">`;
+menuUserButton.innerHTML = `<img src="https://jntapp.github.io/webapp/user/menu/user.svg" style="height:30px;" class="menu__icon-menu" onclick="menuUser_toggle();">`;
 
 const menuUser = document.createElement('div');
 menuUser.className = "user__menu";
@@ -19,8 +19,6 @@ menuUser.innerHTML = `
                   </a>
             </div>`;
 
-
-document.getElementById("menuUserButton").addEventListener("click", menuUser_toggle);
 var menuUserShown = false;
 function menuUser_toggle()
 {
