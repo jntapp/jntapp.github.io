@@ -28,7 +28,7 @@ class DangNhap
         </div>
         
         <font color="white">
-        <div class="error">Vui lòng đăng nhập để vào trang này <br> Please login to access this page</div></font>
+        <div class="error" style="text-align:center;">Vui lòng đăng nhập để vào trang này <br> Please login to access this page</div></font>
         
         <div>
           <table style="width:100%;padding:8px;" border="0">
