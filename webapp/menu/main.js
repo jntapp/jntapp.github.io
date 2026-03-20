@@ -13,16 +13,16 @@ class Menu
                 const menuTable_tr = document.createElement('tr');
                     this.danhSachButton.forEach(button => 
                     {
-                        let menuTable_tr_td = document.createElement('td');
+                        var menuTable_tr_td = document.createElement('td');
                             const buttonElement = button.render();
                             menuTable_tr_td.appendChild(buttonElement);
                         menuTable_tr.appendChild(menuTable_tr_td);
                     });
 
-                    let menuTable_tr_td = document.createElement('td');
+                    var menuTable_tr_td = document.createElement('td');
                     menuTable_tr.appendChild(menuTable_tr_td);
                             
-                    let menuTable_tr_td = document.createElement('td');
+                    var menuTable_tr_td = document.createElement('td');
                     menuTable_tr_td.style.width = "50px";
                         menuTable_tr_td.appendChild(menuUserButton);
                         menuTable_tr_td.appendChild(menuUser);
