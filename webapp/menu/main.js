@@ -18,7 +18,16 @@ class Menu
                             menuTable_tr_td.appendChild(buttonElement);
                         menuTable_tr.appendChild(menuTable_tr_td);
                     });
-                    
+
+                    let menuTable_tr_td = document.createElement('td');
+                    menuTable_tr.appendChild(menuTable_tr_td);
+                            
+                    let menuTable_tr_td = document.createElement('td');
+                    menuTable_tr_td.style.width = "50px";
+                        menuTable_tr_td.appendChild(menuUserButton);
+                        menuTable_tr_td.appendChild(menuUser);
+                    menuTable_tr.appendChild(menuTable_tr_td);
+        
                 menuTable.appendChild(menuTable_tr);
             menuContainer.appendChild(menuTable);
         document.body.appendChild(menuContainer);
