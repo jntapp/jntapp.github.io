@@ -9,6 +9,7 @@ class DangNhap
   {
     const login_container = document.createElement('div');
     login_container.className = "login__container";
+    login_container.id = "loginContainer";
     login_container.style.zIndex = this.zIndex;
       const login_main = document.createElement('div');
       login_main.className = 'login__div';
@@ -24,7 +25,7 @@ class DangNhap
               </td>
           </tr>
         </table>
-        <div class="DivUnderHeader" style="height:70px;">
+        <div class="DivUnderHeader" style="height:70px;">loginContainer
         </div>
         
         <font color="white">
