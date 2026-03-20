@@ -7,6 +7,8 @@ class DangNhap
 
   render()
   {
-    
+    const login_container = document.creatElement('div');
+    login_container.className = "login__container";
+      
   }
 }
