@@ -25,7 +25,7 @@ class DangNhap
               </td>
           </tr>
         </table>
-        <div class="DivUnderHeader" style="height:70px;">loginContainer
+        <div class="DivUnderHeader" style="height:70px;">&nbsp;
         </div>
         
         <font color="white">
