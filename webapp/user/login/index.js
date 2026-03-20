@@ -10,7 +10,7 @@ class DangNhap
     const login_container = document.creatElement('div');
     login_container.className = "login__container";
       const login_main = document.createElement('div');
-      login_main.className = 'login__main';
+      login_main.className = 'login__div';
       login_main.innerHTML = `
         <table class="login__header">
           <tr>
@@ -56,12 +56,8 @@ class DangNhap
               </td>
             </tr>
           </table>
-          <div style="height:50px;">
-            <p style="display:none;">
-              
-            </p>
-        </div>`;
+          <div style="height:50px;"></div>`;
       login_container.appendChild('login_main');
-      
+      document.body.appendChild('login_container');
   }
 }
