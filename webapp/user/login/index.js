@@ -74,3 +74,9 @@ class DangNhap
 
 const dangNhap = new DangNhap();
 dangNhap.render();
+
+function showLogin()
+{
+  document.getElementById('loginContainer').style.display = 'block';
+  document.getElementById('passWord').value = '';
+}
