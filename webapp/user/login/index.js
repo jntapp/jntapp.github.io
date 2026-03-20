@@ -57,8 +57,8 @@ class DangNhap
             </tr>
           </table>
           <div style="height:50px;"></div>`;
-      login_container.appendChild('login_main');
-      document.body.appendChild('login_container');
+      login_container.appendChild(login_main);
+      document.body.appendChild(login_container);
   }
 }
 
