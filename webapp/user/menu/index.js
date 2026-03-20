@@ -18,3 +18,21 @@ menuUser.innerHTML = `
                         Đăng xuất
                   </a>
             </div>`;
+
+
+document.getElementById("menuUserButton").addEventListener("click", menuUser_toggle);
+var menuUserShown = false;
+function menuUser_toggle()
+{
+      let menuUser = document.getElementById("menuUser");
+      if (menuUserShown)
+      {
+            menuUser.style.display = "none";
+            menuUserShown = false;
+      }
+      else
+      {
+            menuUser.style.display = "flex";
+            menuUserShown = true;
+      }
+}
