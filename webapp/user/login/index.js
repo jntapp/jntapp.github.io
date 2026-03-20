@@ -61,3 +61,6 @@ class DangNhap
       document.body.appendChild('login_container');
   }
 }
+
+const dangNhap = new DangNhap();
+dangNhap.render();
