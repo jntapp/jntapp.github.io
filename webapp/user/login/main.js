@@ -26,4 +26,8 @@ function showLoginSuccessfull()
   setTimeout(function(){
     document.getElementById('loginSuccessfull').style.display = 'block';
   },500);
+  setTimeout(function(){
+    document.getElementById('loginContainer').style.display = 'none';
+  },1500);
+  
 }
