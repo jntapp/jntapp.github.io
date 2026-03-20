@@ -1,1 +1,13 @@
-
+.user__menu
+{
+    position: fixed;
+    top:50px;
+    right:0px;
+    width:200px;
+    padding:10px;
+    display: none;
+    background-color: var(--button-background);
+    flex-direction: column;
+    z-index: 1000;
+    gap:20px;
+}
