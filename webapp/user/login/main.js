@@ -2,7 +2,7 @@ function doLogin()
 {
   let userName = document.getElementById("userName").value;
   let pass = document.getElementById("passWord").value;
-  if (userNam.length < 3)
+  if (userName.length < 3)
   {
     alert('Vui lòng kiểm tra tên đăng nhập!");
   }
