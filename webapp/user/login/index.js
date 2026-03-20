@@ -31,7 +31,7 @@ class DangNhap
         <div class="error" style="text-align:center;">Vui lòng đăng nhập để vào trang này <br> Please login to access this page</div></font>
         
         <div>
-          <table style="width:100%;padding:8px;" border="0">
+          <table style="width:100%;padding:8px;background:green;" border="0">
             <tr>
               <td>
               </td>
@@ -57,7 +57,7 @@ class DangNhap
               </td>
             </tr>
           </table>
-          <div style="height:50px;"></div>`;
+          <div style="height:10px;"></div>`;
       login_container.appendChild(login_main);
       document.body.appendChild(login_container);
   }
