@@ -46,6 +46,12 @@
     animation-duration: 0.5s;
 }
 
+.login__form
+{
+  animation-name: hideShow;
+  animation-duration: 0.5s;
+}
+
 .login__header 
 {
     width: 100%;
