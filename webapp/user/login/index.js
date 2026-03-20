@@ -28,6 +28,12 @@ class DangNhap
         </div>
         
         <font color="white">
+          <div class="login__error" id="loginSuccessfull" style="text-align:center;display:none;">
+            <h1>Đăng nhập thành công!</h1>
+          </div>
+        </font>
+        
+        <font color="white">
           <div class="login__error" id="loginError" style="text-align:center;">
             Vui lòng đăng nhập để vào trang này <br> Please login to access this page
           </div>
