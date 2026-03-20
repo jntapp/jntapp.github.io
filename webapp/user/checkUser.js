@@ -8,6 +8,7 @@ function checkUser()
     google.script.run.withSuccessHandler(function(user) 
     {
       user = JSON.parse(user);
+      localStorage.setItem('loginStatus', user.status);
       console.log(user);
       status = user;
       if (user.status !== 'ok')
