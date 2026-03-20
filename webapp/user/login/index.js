@@ -33,24 +33,24 @@ class DangNhap
           </div>
         </font>
           
-        <table style="width:100%;padding:8px;background:green;" border="0">
+        <table style="width:100%;padding:8px;" border="0">
           <tr>
             <td>
             </td>
           </tr>
           <tr>
-              <td style="position:relative;">
-                  <input type="text" name="username" id="userName" placeholder="Tên đăng nhập" class="InputBox InputA" value="">
-                  <img src="https://jntapp.github.io/webapp/user/login/user_icon.png" style="position:absolute;left:5px;bottom:7px;width:18px;opacity:0.5;">
-              </td>
-            </tr>
+            <td style="position:relative;">
+                <input type="text" name="username" id="userName" placeholder="Tên đăng nhập" class="InputBox InputA" value="">
+                <img src="https://jntapp.github.io/webapp/user/login/user_icon.png" style="position:absolute;left:5px;bottom:7px;width:18px;opacity:0.5;">
+            </td>
+          </tr>
     
           <tr>
-              <td style="position:relative;">
-                  <input type="password" name="password" id="passWord" placeholder="Mật khẩu" class="InputBox InputA">
-                  <img src="https://jntapp.github.io/webapp/user/login/password_icon.png" style="position:absolute;left:5px;bottom:7px;width:18px;opacity:0.5;">
-              </td>
-            </tr>
+            <td style="position:relative;">
+                <input type="password" name="password" id="passWord" placeholder="Mật khẩu" class="InputBox InputA">
+                <img src="https://jntapp.github.io/webapp/user/login/password_icon.png" style="position:absolute;left:5px;bottom:7px;width:18px;opacity:0.5;">
+            </td>
+          </tr>
           <tr>
             <td style="padding-top:35px;text-align:center;">
               <button name="login_user" 
@@ -59,7 +59,7 @@ class DangNhap
             </td>
           </tr>
         </table>
-        <div style="height:10px;"></div>`;
+        <div style="height:20px;"></div>`;
       login_container.appendChild(login_main);
       document.body.appendChild(login_container);
   }
