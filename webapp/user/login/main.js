@@ -2,21 +2,32 @@ function doLogin()
 {
   let userName = document.getElementById("userName").value;
   let pass = document.getElementById("passWord").value;
-  let loginInfor = {userName: userName, passWord: pass};
-  google.script.run.withSuccessHandler(function(status) 
+  if (userNam.length < 3)
   {
-    status = JSON.parse(status);
-    if (status.status == 'ok')
+    alert('Vui lòng kiểm tra tên đăng nhập!");
+  }
+  else if (pass.length < 3)
+  {
+    alert('Vui lòng kiểm tra lại mật khẩu!");
+  }
+  else
+  {
+    let loginInfor = {userName: userName, passWord: pass};
+    google.script.run.withSuccessHandler(function(status) 
     {
-      localStorage.setItem("userKey", status.userKey);
-      showLoginSuccessfull();
-      //window.location.href = "#?page=index";
-    }
-    else
-    {
-      alert(status.message);
-    }
-  }).doLogin(JSON.stringify(loginInfor));
+      status = JSON.parse(status);
+      if (status.status == 'ok')
+      {
+        localStorage.setItem("userKey", status.userKey);
+        localStorage.setItem("loginStatus", 'ok');
+        showLoginSuccessfull();
+      }
+      else
+      {
+        alert(status.message);
+      }
+    }).doLogin(JSON.stringify(loginInfor));
+  }  
 }
 
 function showLoginSuccessfull()
