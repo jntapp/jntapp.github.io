@@ -1,6 +1,6 @@
 class DangNhap
 {
-  constructor(zIndex = 1000)
+  constructor(zIndex = "1000")
   {
     this.zIndex = zIndex;
   }
@@ -9,6 +9,7 @@ class DangNhap
   {
     const login_container = document.createElement('div');
     login_container.className = "login__container";
+    login_container.style.zIndex = this.zIndex;
       const login_main = document.createElement('div');
       login_main.className = 'login__div';
       login_main.innerHTML = `
