@@ -4,6 +4,7 @@ menuUserButton.innerHTML = `<img src="https://jntapp.github.io/webapp/user/menu/
 
 const menuUser = document.createElement('div');
 menuUser.className = "user__menu";
+menuUser.id = "menuUser";
 menuUser.innerHTML = `
             <div id="menuUser_name"  class="menu__button" style="font-weight:bold; margin-top:10px;">
                   Trần Văn Hùng
