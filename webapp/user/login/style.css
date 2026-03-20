@@ -1,3 +1,10 @@
+@keyframes hideShow {
+  0%   {opacity: 0;}
+  25%  {opacity: 0.25;}
+  50%  {opacity: 0.5;}
+  100% {opacity: 1;}
+}
+
 .login__container  
 {
     position:fixed;
@@ -16,6 +23,8 @@
     margin-top:60px;
     background: -webkit-linear-gradient(top left, red, #ff7100);
     max-height:500px;
+    animation-name: hideShow;
+    animation-duration: 0.5s;
 }
 
 
@@ -28,6 +37,13 @@
 @media only screen and (min-width:577px) 
 {
     .login__div {width: 400px;}
+}
+
+
+.login__error
+{
+    animation-name: hideShow;
+    animation-duration: 0.5s;
 }
 
 .login__header 
@@ -52,6 +68,9 @@
     
 .InputA
 {
+    animation-name: hideShow;
+    animation-duration: 0.5s;
+    
     margin-top:20px;
     background:none;
     border-top:0px;
