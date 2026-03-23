@@ -10,6 +10,7 @@ class Menu
         const menuContainer = document.createElement('div');
         menuContainer.className = 'menu';
             const menuTable = document.createElement('table');
+            menuTable.style.width = "100%";
                 const menuTable_tr = document.createElement('tr');
                     this.danhSachButton.forEach(button => 
                     {
