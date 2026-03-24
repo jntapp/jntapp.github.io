@@ -8,8 +8,8 @@ function checkUser()
     {
       user = JSON.parse(user);
       localStorage.setItem('loginStatus', user.status);
-      localStorage.setItem("userHoVaTen", status.userHoVaTen);
-      document.getElementById('userMenu_hoVaTen').value = status.userHoVaTen;
+      localStorage.setItem("userHoVaTen", user.userHoVaTen);
+      document.getElementById('userMenu_hoVaTen').value = user.userHoVaTen;
       //console.log(user);
       status = user;
       if (user.status !== 'ok')

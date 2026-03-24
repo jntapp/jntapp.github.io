@@ -1,0 +1,110 @@
+function getUserStatus(key) 
+{
+  let status = {userHoVaTen: '' , status: 'notOk', userKey: key, message:''};
+  if (key && key.length > 5)
+  {
+    var ss = SpreadsheetApp.getActive();
+    var sheet = ss.getSheetByName("user");
+    var data = sheet.getRange(2, 1, sheet.getLastRow() - 1, 5).getValues();
+
+    let timThayKey = false;
+    for (let i=0; i<data.length; i++)
+    {
+      if (data[i][3] == key)
+      {
+        timThayKey = true;
+        let thoiDiemDangNhap = data[i][2];
+        let thoiDiemHienTai = Date.now();
+        let thoiGianDaDangNhap = thoiDiemHienTai - thoiDiemDangNhap;
+        
+        if (thoiGianDaDangNhap < 30*60*1000)
+        {
+          status = {userHoVaTen: data[i][4],status: 'ok', userKey: key, message:'ok'};
+        }
+        else
+        {
+          status = {userHoVaTen:'Khách ghé thăm', status: 'notOk', userKey: key, message:'Đăng nhập hết hạn!'};
+        }
+        break;
+      }
+    }
+
+    if (!timThayKey)
+    {
+      status = {userHoVaTen:'Khách ghé thăm', status: 'notOk', userKey: key, message:'Key không hợp lệ!'};
+    }
+  }
+
+  return JSON.stringify(status);
+}
+
+
+function doLogin(loginInfor)
+{
+  const KeyDuAn = 'cuongpv12';
+  let status = {userHoVaTen: '' , status: 'notOk', userKey: '', message:''};
+
+  loginInfor = JSON.parse(loginInfor);
+  let userName = loginInfor.userName;
+  let passWord = loginInfor.passWord;
+  let userKey = '0';
+  
+  var ss = SpreadsheetApp.getActive();
+  var sheet = ss.getSheetByName("user");
+  var data = sheet.getRange(2, 1, sheet.getLastRow() - 1, 5).getValues();
+  let timThay = false;
+  for (let i=0; i<data.length; i++)
+  {
+    if (data[i][0] == userName)
+    {
+      timThay = true;
+      if (data[i][1] == passWord)
+      {
+        status.status = 'ok';
+        let thoiGian = {exp: Math.floor(Date.now() / 1000) + (60 * 60)};
+        thoiGian = Utilities.base64EncodeWebSafe(JSON.stringify(thoiGian));
+        userKey = Utilities.base64EncodeWebSafe(Utilities.computeHmacSha256Signature(userName + thoiGian, KeyDuAn));
+        status.userKey = userKey;
+        status.userHoVaTen = data[i][4];
+        let j = i + 2;
+        sheet.getRange(j,4,1,1).setValue(userKey);
+        sheet.getRange(j,3,1,1).setValue(Date.now());
+        break;
+      }
+      else
+      {
+        status.message = 'Mật khẩu sai!';
+      }
+    }
+  }
+
+  if (!timThay){status.message = 'User không tồn tại!' + userName;}
+  return JSON.stringify(status);
+}
+
+
+function doLogout(key)
+{
+  let status = {userHoVaTen: '' , status: 'notOk', userKey: key, message:''};
+  if (key && key.length > 5)
+  {
+    var ss = SpreadsheetApp.getActive();
+    var sheet = ss.getSheetByName("user");
+    var data = sheet.getRange(2, 1, sheet.getLastRow() - 1, 5).getValues();
+
+    let timThayKey = false;
+    for (let i=0; i<data.length; i++)
+    {
+      if (data[i][3] == key)
+      {
+        var j = i +2;
+        sheet.getRange(j, 3,1,2).setValue('');
+        break;
+      }
+    }
+  }
+  return JSON.stringify(status);
+}
+
+
+
