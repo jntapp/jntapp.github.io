@@ -1,6 +1,3 @@
-
-
-
 function checkUser()
 {
   let key = localStorage.getItem("userKey");
