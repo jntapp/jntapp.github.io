@@ -80,3 +80,36 @@ function showLogin()
   document.getElementById('loginContainer').style.display = 'flex';
   document.getElementById('passWord').value = '';
 }
+
+
+
+class DangXuat
+{
+  constructor(zIndex = "1000")
+  {
+    this.zIndex = zIndex;
+  }
+
+  render()
+  {
+    const logout_container = document.createElement('div');
+    logout_container.className = "login__container";
+    logout_container.id = "logoutContainer";
+    logout_container.style.zIndex = this.zIndex;
+    logout_container.style.background = 'white';
+    logout_container.innerHTML = `
+      <center>
+        <h1 style="color:white;"margin-top:100px;">Đã đăng xuất</h1><br>
+        <a href="https://script.google.com/macros/s/AKfycbwyJMGL0BT8gQuhiN4jNCwaJYIfYx43RiMx7B1uYQffgv-KH55tv3xLTRedENm6k1Ob/exec" target="_top"><font color="white">Quay lại trang chủ</font></a>
+      </center>
+    `;
+    
+    
+  }
+}
+
+function showLoggedOut()
+{
+  document.getElementById('logoutContainer').style.display = 'flex';
+}
+
