@@ -38,6 +38,6 @@ function logout()
     localStorage.setItem('loginStatus', 'notOk');
     localStorage.setItem("userHoVaTen", '');
     document.getElementById('userMenu_hoVaTen').innerText = '-';
-    showLoggedout();
+    showLoggedOut();
   }).doLogout(key);
 }
