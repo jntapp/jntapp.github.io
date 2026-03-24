@@ -21,6 +21,7 @@ function doLogin()
         localStorage.setItem("userKey", status.userKey);
         localStorage.setItem("loginStatus", 'ok');
         localStorage.setItem("userHoVaTen", status.userHoVaTen);
+        document.getElementById('menuUser_hoVaTen').value = status.userHoVaTen;
         showLoginSuccessfull();
       }
       else
@@ -40,8 +41,6 @@ function showLoginSuccessfull()
   setTimeout(function(){
     document.getElementById('loginContainer').style.display = 'none';
   },500);
-
-  document.getElementById('userMenu_hoVaTen').value = 
 }
 
 
