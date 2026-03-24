@@ -10,12 +10,12 @@ menuUser.innerHTML = `
                   Trần Văn Hùng
             </div>
             <div>
-                  <a target="_top" href="https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec" class="menu__button">
+                  <a target="_top" href="javascript:void(0);"  onclick="changePassword();" class="menu__button">
                         Đổi mật khẩu
                   </a>
             </div>
             <div>
-                  <a style="margin-botton:20px;" target="_top" href="https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec?page=nhap-kho" class="menu__button">
+                  <a style="margin-botton:20px;" onclick="logout();" target="_top" href="javascript:void(0);" class="menu__button">
                         Đăng xuất
                   </a>
             </div>`;
