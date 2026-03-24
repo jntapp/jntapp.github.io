@@ -31,6 +31,13 @@ function checkUser()
 
 checkUser();
 
+document.getElementById('userMenu_dangXuat').addEventListener('click',
+  function(e)
+  {
+    e.preventDefault();
+    logout();
+  }
+);
 
 function logout()
 {
