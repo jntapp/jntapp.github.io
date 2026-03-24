@@ -104,11 +104,11 @@ class DangXuat
       </center>
     `;
     
-    
+    document.body.appendChild(logout_container);
   }
 }
 
-const dangXuat = new DangXuat();
+dangXuatconst dangXuat = new DangXuat();
 dangXuat.render();
 
 function showLoggedOut()
