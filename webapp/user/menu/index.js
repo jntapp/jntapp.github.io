@@ -6,7 +6,7 @@ const menuUser = document.createElement('div');
 menuUser.className = "user__menu";
 menuUser.id = "menuUser";
 menuUser.innerHTML = `
-            <div id="menuUser_name"  class="menu__button" style="font-weight:bold; margin-top:10px;">
+            <div id="menuUser_hoVaTen"  class="menu__button" style="font-weight:bold; margin-top:10px;">
                   Trần Văn Hùng
             </div>
             <div>
