@@ -46,7 +46,7 @@ class MenuButton
     render()
     {
         const bt = document.createElement('div');
-        bt.className = 'menu-button';
+        bt.className = 'menu__button';
         bt.innerHTML = `<a href="${this.url}"><font color="white">${this.caption}</font></a>`;
         return bt;
     }
