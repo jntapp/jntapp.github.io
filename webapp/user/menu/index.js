@@ -15,7 +15,7 @@ menuUser.innerHTML = `
                   </a>
             </div>
             <div>
-                  <a style="margin-botton:20px;" id="userMenu_dangXuat" onclick="logout();" href="#" class="menu__button">
+                  <a style="margin-botton:20px;" id="userMenu_dangXuat" href="#" class="menu__button">
                         <font color="white">Đăng xuất</font>
                   </a>
             </div>`;
