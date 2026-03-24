@@ -20,6 +20,7 @@ function doLogin()
       {
         localStorage.setItem("userKey", status.userKey);
         localStorage.setItem("loginStatus", 'ok');
+        localStorage.setItem("userHoVaTen", status.userHoVaTen);
         showLoginSuccessfull();
       }
       else
@@ -34,11 +35,13 @@ function showLoginSuccessfull()
 {
   document.getElementById('loginError').style.display = 'none';
   document.getElementById('loginForm').style.display = 'none';
-  setTimeout(function(){
-    document.getElementById('loginSuccessfull').style.display = 'block';
-  },200);
+  document.getElementById('loginSuccessfull').style.display = 'block';
+  
   setTimeout(function(){
     document.getElementById('loginContainer').style.display = 'none';
-  },1200);
-  
+  },500);
+
+  document.getElementById('userMenu_hoVaTen').value = 
 }
+
+
