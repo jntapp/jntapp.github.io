@@ -108,6 +108,9 @@ class DangXuat
   }
 }
 
+const dangXuat = new DangNhap();
+dangXuat.render();
+
 function showLoggedOut()
 {
   document.getElementById('logoutContainer').style.display = 'flex';
