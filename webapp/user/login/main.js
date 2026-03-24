@@ -23,7 +23,7 @@ function doLogin()
         localStorage.setItem("userKey", status.userKey);
         localStorage.setItem("loginStatus", 'ok');
         localStorage.setItem("userHoVaTen", status.userHoVaTen);
-        document.getElementById('menuUser_hoVaTen').innerText = status.userHoVaTen;
+        document.getElementById('userMenu_hoVaTen').innerText = status.userHoVaTen;
         showLoginSuccessfull();
       }
       else
