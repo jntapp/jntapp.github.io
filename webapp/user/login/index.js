@@ -18,10 +18,10 @@ class DangNhap
           <tr>
               <td style="position:relative;">
               <div style="width:100%;text-align:center;">
-                  <img src="https://jntapp.github.io/webapp/user/login/contact_caption.svg" style="height:25px;opacity:0.75;">
+                  <img src="https://jntapp.github.io/webapp/user/login/img/contact_caption.svg" style="height:25px;opacity:0.75;">
               </div>
               
-              <img src="https://jntapp.github.io/webapp/user/login/contact_book.svg" style="height:32px;position:absolute;right:30px;top:2px;opacity:0.35;">
+              <img src="https://jntapp.github.io/webapp/user/login/img/contact_book.svg" style="height:32px;position:absolute;right:30px;top:2px;opacity:0.35;">
               </td>
           </tr>
         </table>
@@ -48,14 +48,14 @@ class DangNhap
           <tr>
             <td style="position:relative;">
                 <input type="text" name="username" id="userName" placeholder="Tên đăng nhập" class="InputBox InputA" value="">
-                <img src="https://jntapp.github.io/webapp/user/login/user_icon.png" style="position:absolute;left:5px;bottom:7px;width:18px;opacity:0.5;">
+                <img src="https://jntapp.github.io/webapp/user/login/img/user_icon.png" style="position:absolute;left:5px;bottom:7px;width:18px;opacity:0.5;">
             </td>
           </tr>
     
           <tr>
             <td style="position:relative;">
                 <input type="password" name="password" id="passWord" placeholder="Mật khẩu" class="InputBox InputA">
-                <img src="https://jntapp.github.io/webapp/user/login/password_icon.png" style="position:absolute;left:5px;bottom:7px;width:18px;opacity:0.5;">
+                <img src="https://jntapp.github.io/webapp/user/login/img/password_icon.png" style="position:absolute;left:5px;bottom:7px;width:18px;opacity:0.5;">
             </td>
           </tr>
           <tr>
