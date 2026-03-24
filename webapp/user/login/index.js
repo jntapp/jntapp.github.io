@@ -99,8 +99,8 @@ class DangXuat
     logout_container.style.background = 'white';
     logout_container.innerHTML = `
       <center>
-        <h1 style="color:white;"margin-top:100px;">Đã đăng xuất</h1><br>
-        <a href="https://script.google.com/macros/s/AKfycbwyJMGL0BT8gQuhiN4jNCwaJYIfYx43RiMx7B1uYQffgv-KH55tv3xLTRedENm6k1Ob/exec" target="_top"><font color="white">Quay lại trang chủ</font></a>
+        <h1 style="color:rgba(0,0,0,0.4);"margin-top:100px;">Đã đăng xuất</h1><br>
+        <a href="https://script.google.com/macros/s/AKfycbwyJMGL0BT8gQuhiN4jNCwaJYIfYx43RiMx7B1uYQffgv-KH55tv3xLTRedENm6k1Ob/exec" target="_top"><font color="brown">Quay lại trang chủ</font></a>
       </center>
     `;
     
