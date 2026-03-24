@@ -11,12 +11,12 @@ menuUser.innerHTML = `
             </div>
             <div>
                   <a target="_top" href="javascript:void(0);"  onclick="changePassword();" class="menu__button">
-                        Đổi mật khẩu
+                        <font color="white">Đổi mật khẩu</font>
                   </a>
             </div>
             <div>
                   <a style="margin-botton:20px;" onclick="logout();" target="_top" href="javascript:void(0);" class="menu__button">
-                        Đăng xuất
+                        <font color="white">Đăng xuất</font>
                   </a>
             </div>`;
 
