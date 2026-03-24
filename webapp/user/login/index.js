@@ -108,7 +108,7 @@ class DangXuat
   }
 }
 
-const dangXuat = new DangNhap();
+const dangXuat = new DangXuat();
 dangXuat.render();
 
 function showLoggedOut()
